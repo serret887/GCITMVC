@@ -1,0 +1,10 @@
+INSERT INTO `tbl_author` VALUES (1,'Cathryn Bogan'),(2,'Dane Ritchie'),(3,'Anna Rowe');
+INSERT INTO `tbl_book` VALUES (1,'Administaff ALEX',2),(2,'Limited Inc. ALEX',2),(3,'Di Giorgio Corporation ALEX',1);
+INSERT INTO `tbl_book_authors` VALUES (1,1),(2,1),(3,2),(1,3),(2,3),(3,3);
+INSERT INTO `tbl_book_copies` VALUES (1,1,19),(1,2,18),(1,3,19),(2,1,74),(2,2,73),(2,3,72),(3,1,42),(3,2,44),(3,3,44);
+INSERT INTO `tbl_book_genres` VALUES (4,1),(7,1),(1,2),(6,2),(6,3),(7,3);
+INSERT INTO `tbl_book_loans` VALUES (1,2,2,'2016-02-18 14:15:50','2016-02-25 14:15:50',NULL),(2,2,1,'2016-02-18 14:15:50','2016-02-25 14:15:50',NULL),(2,3,1,'2016-02-18 14:15:50','2016-02-25 14:15:50',NULL),(2,3,2,'2016-02-18 14:15:50','2016-02-25 14:15:50',NULL),(3,1,1,'2016-02-18 14:15:50','2016-02-25 14:15:50',NULL),(3,1,2,'2016-02-18 14:15:50','2016-02-25 14:15:50',NULL);
+INSERT INTO `tbl_borrower` VALUES (1,'George Lang II','3116 Connelly Parks Apt. 888','71524'),(2,'Shania Kutch','622 Margarette Turnpike Suite 391','35327');
+INSERT INTO `tbl_genre` VALUES (1,'Science fiction'),(2,'Satire'),(3,'Drama'),(4,'Action and Adventure'),(5,'Romance'),(6,'Mystery'),(7,'Horror');
+INSERT INTO `tbl_library_branch` VALUES (1,'Weyerhauser Company','94574 Heaney Pass'),(2,'PPL Corp','88525 Mueller Courts'),(3,'Aetna Inc.','9704 Bartoletti Rue');
+INSERT INTO `tbl_publisher` VALUES (1,'Gillette Company','2315 Weimann Road','967-769-5372 x698'),(2,'Inc.','06839 Lois Groves','1-744-790-1515 x084');

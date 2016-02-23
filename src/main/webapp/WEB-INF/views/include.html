@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+<title>LMS</title>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"
+	crossorigin="anonymous"></script>
+<link href="../../resources/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css">
+<!-- CDN -->
+<link rel="stylesheet"
+	href="./resources/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+
+<!-- select -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<!-- select -->
+
+
+
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+
+<base href="http://localhost:9080/training/">
+
+
+<!-- CDN -->
+</head>
+
+<body role="document">
+
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="">LMS</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Menu <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="Administrator">Administrator</a></li>
+							<li><a href="Librarian">Librarian</a></li>
+							<li><a href="">Borrower</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+
+	<div id="global-zeroclipboard-html-bridge"
+		class="global-zeroclipboard-container"
+		style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;"
+		title="" data-original-title="Copy to clipboard">
+		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+			id="global-zeroclipboard-flash-bridge" width="100%" height="100%">
+			<param name="movie"
+				value="/assets/flash/ZeroClipboard.swf?noCache=1453935302971">
+			<param name="allowScriptAccess" value="sameDomain">
+			<param name="scale" value="exactfit">
+			<param name="loop" value="false">
+			<param name="menu" value="false">
+			<param name="quality" value="best">
+			<param name="bgcolor" value="#ffffff">
+			<param name="wmode" value="transparent">
+			<param name="flashvars"
+				value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">
+			<embed src="/assets/flash/ZeroClipboard.swf?noCache=1453935302971"
+				loop="false" menu="false" quality="best" bgcolor="#ffffff"
+				width="100%" height="100%" name="global-zeroclipboard-flash-bridge"
+				allowscriptaccess="sameDomain" allowfullscreen="false"
+				type="application/x-shockwave-flash" wmode="transparent"
+				pluginspage="http://www.macromedia.com/go/getflashplayer"
+				flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com"
+				scale="exactfit">
+		</object>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="500"
+		viewBox="0 0 1140 500" preserveAspectRatio="none"
+		style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+		<defs>
+		<style type="text/css"></style></defs>
+		<text x="0" y="57"
+			style="font-weight:bold;font-size:57pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thirdslide</text></svg>
+</body>
+</html>
+<style type="text/css">
+table.auto{
+    table-layout:auto;
+}
+</style>
+<script>
+  $(document).ready(function() {
+    $(function() {
+      $('#cardValidation').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+          url : "addAuthor", //this is the submit URL
+          type : 'POST', //or POST
+          data : $('#cardValidation').serialize(),
+          success : function(data) {
+            if (data.trim() == "success") {
+              alert("Author Successfully added.");
+            } else {
+              alert("There was a problem adding author.");
+
+            }
+            //$("myModal").modal("toggle");
+          }
+        });
+      });
+    });
+
+  });
+</script>
+
+
+
